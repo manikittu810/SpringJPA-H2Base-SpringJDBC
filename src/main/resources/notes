@@ -1,0 +1,28 @@
+create table course (
+  id bigint not null ,
+  name varchar(255) not null ,
+   author varchar(255) not null ,
+   primary key (id)
+);
+
+All the above mentioned is an  SQL query for the JDBC H2 DB.
+---------------------------------------------------------------------------------------
+
+This below queries are written when we connect with DB , in the localhost with a port.
+you should have created a sql file with the above mentioned query.
+when you start connecting with JDBC with  url, and , you can use your custom url mentioned in the
+application.properties file and run the project. Then you can copy your custom url from the console
+and paste in the JDBC-url section in the localhost:7070/h2-console.
+Then click connect .
+then it will connect to the JDBC server and starts running.
+There will be a prompt/ section to run your queries.
+Use this below query and click run.
+
+insert into COURSE (id,name,author)
+values(1,'AWS','Smk');
+
+select * from course
+
+delete from course where id=1
+
+---------------------------------------------------------------------------------------------
