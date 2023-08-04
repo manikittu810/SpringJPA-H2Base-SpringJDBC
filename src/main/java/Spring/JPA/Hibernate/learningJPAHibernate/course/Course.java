@@ -1,6 +1,12 @@
 package Spring.JPA.Hibernate.learningJPAHibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity //it is used for mapping
 public class Course {
+    @Id //primary key
     private long id;
     private String name;
     private  String author;
